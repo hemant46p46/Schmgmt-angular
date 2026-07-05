@@ -1,0 +1,13 @@
+<div class="bg-white p-6 rounded-2xl shadow-2xl max-w-md w-full mx-4 border border-gray-100 transform scale-100 transition-transform duration-200 z-[10000]">
+    <div class="bg-yellow-50 p-2 text-xs text-yellow-800 rounded mb-3 font-mono">
+      [RENDER TRACE]: {{ course?.courseName ? 'Rendering Active' : 'Rendering Empty' }}
+    </div>
+    <h3 class="text-xl font-bold mb-2 text-gray-800">{{ course?.courseName }}</h3>
+    <div class="space-y-1 mb-4">
+        <p class="text-gray-600"><span class="font-semibold">Course Code:</span> {{ course?.courseCode }}</p>
+        <p class="text-gray-600"><span class="font-semibold">Credits:</span> {{ course?.credits }}</p>
+    </div>
+    <div class="flex justify-end">
+        <button (click)="closeDialog()" class="bg-gray-500 hover:bg-gray-600 text-white rounded-xl py-2 px-4 transition-colors font-medium cursor-pointer">Close</button>
+    </div>
+</div>
