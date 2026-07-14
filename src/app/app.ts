@@ -1,10 +1,10 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { Schmgmt } from "./schmgmt/schmgmt";
+// import { Schmgmt } from "./schmgmt/schmgmt";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Schmgmt],
+  imports: [RouterOutlet,],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
